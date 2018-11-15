@@ -1,0 +1,57 @@
+{
+    "name": "mediact/composer-unclog-plugin",
+    "description": "Shows warnings if you can optimise your composer files even further.",
+    "type": "composer-plugin",
+    "license": [
+        "proprietary"
+    ],
+    "authors": [
+        {
+            "name": "MediaCT B.V.",
+            "email": "contact@mediact.nl"
+        },
+        {
+            "name": "Marcel Frankruijter",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1",
+        "composer-plugin-api": "^1.1",
+        "composer/composer": "^1.7"
+    },
+    "require-dev": {
+        "mediact/testing-suite": "@stable",
+        "mediact/coding-standard-magento2": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mediact\\ComposerUnclogPlugin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mediact\\ComposerUnclogPlugin\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "grumphp": {
+            "config-default-path": "vendor/mediact/testing-suite/config/default/grumphp.yml"
+        },
+        "class": "Mediact\\ComposerUnclogPlugin\\Plugin"
+    },
+    "archive": {
+        "exclude": [
+            "/phpunit.xml",
+            "/phpmd.xml",
+            "/phpstan.neon",
+            "/phpcs.xml",
+            "/.gitignore",
+            "/tests"
+        ]
+    }
+}
