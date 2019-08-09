@@ -120,7 +120,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
                     $warningList[] = sprintf(
                         '- Repository with URL "%s" contains a disallowed '.
                         'package type "%s". It\'s recommended to change this to "%s".',
-                        $repository['url'],
+                        $repository['url'] ?? '',
                         $repository['type'],
                         implode(
                             ', ',
