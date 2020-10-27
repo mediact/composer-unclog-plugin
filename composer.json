@@ -15,14 +15,14 @@
             "role": "developer"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.1",
         "composer-plugin-api": "^2.0",
         "composer/composer": "^2.0"
     },
     "require-dev": {
-        "mediact/testing-suite": "dev-feature/support-composer-v2 as 3.0.0",
+        "mediact/testing-suite": "@stable",
         "mediact/coding-standard-magento2": "@stable"
     },
     "autoload": {
