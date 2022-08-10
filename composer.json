@@ -2,6 +2,7 @@
     "name": "mediact/composer-unclog-plugin",
     "description": "Shows warnings if you can optimise your composer files even further.",
     "type": "composer-plugin",
+    "abandoned": "youwe/composer-unclog-plugin",
     "license": [
         "proprietary"
     ],

@@ -1,4 +1,4 @@
-# Summary
+# [ABANDONED] Summary
 
 This package contains a plugin for composer. 
 The plugin detects optimisations for the `composer.json` file of a project.
